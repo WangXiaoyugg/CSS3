@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fade-carousel</title>
+	<style type="text/css">
+	body{background: rgba(13,206,203,1)}
+	*{margin: 0;padding: 0;list-style: none;}
+	a{text-decoration: none;}
+	.ct{
+		height:220px;
+		width: 300px;
+		margin: 100px auto; 
+	}
+	.ct .img-ct>li{
+		position: absolute;
+		opacity: 0;
+	}
+	.ct .img-ct img{
+		width: 300px;
+		height: 220px;
+	}
+	@keyframes fade {
+		0% {opacity: 0;transition: all 1s;}
+		10% {opacity: 1;transition: all 1s;}
+		20% {opacity: 1;transition: all 1s;}
+		30%{opacity: 0;transition: all 1s;}
+		40%{opacity: 0;transition: all 1s;}
+		50% {opacity: 1;transition: all 1s;}
+		60% {opacity: 1;transition: all 1s;}
+		70%{opacity: 0;transition: all 1s;}
+		80%{opacity: 0;transition: all 1s;}
+	}
+	.ct .img-ct>li:nth-child(1){
+		animation: fade 12s linear 0s infinite;
+	}
+	.ct .img-ct>li:nth-child(2){
+		animation: fade 12s linear 3s infinite;
+	}
+	.ct .img-ct>li:nth-child(3){
+		animation: fade 12s linear 6s infinite;
+	}
+	.ct .img-ct>li:nth-child(4){
+		animation: fade 12s linear 9s infinite;
+	}
+	</style>
+</head>
+<body>
+	<div class="ct">
+		<ul class="img-ct">
+			<li><a href="#"><img src="../images/photo1.jpg" alt=""></a></li>
+			<li><a href="#"><img src="../images/photo2.jpg" alt=""></a></li>
+			<li><a href="#"><img src="../images/photo3.jpg" alt=""></a></li>
+			<li><a href="#"><img src="../images/wallpaper-0032.jpg" alt=""></a></li>
+		</ul>
+	</div>
+</body>
+</html>

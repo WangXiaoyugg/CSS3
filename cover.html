@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cover</title>
+	<style type="text/css">
+	.cover{
+		position: absolute;
+		top: 0;left: 0;bottom: 0;right: 0;
+		background: url(http://book.jirengu.com/%E8%8B%A5%E6%84%9A/jsworks/css3/bg.jpg);
+		background-size: cover
+	}
+	.cover:before{
+		position: absolute;
+		display: block;
+		content: '';
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 50%;
+		background: linear-gradient(to bottom right,rgba(0,255,0,0),rgba(0,255,0,1))
+	}
+		.cover:after{
+		display: block;
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 50%;
+		background: linear-gradient(to bottom right,rgba(255,0,0,0),rgba(255,0,0,1))
+	}
+	</style>
+</head>
+<body>
+	<div class="cover">
+		
+	</div>
+</body>
+</html>
